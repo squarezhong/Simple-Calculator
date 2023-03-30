@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/text_square_rights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/square_rights"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/button_blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/visit_my_blog"
+        app:layout_constraintBottom_toTopOf="@+id/button_feedback"
+        app:layout_constraintEnd_toEndOf="@+id/text_square_rights"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_square_rights"
+        app:layout_constraintTop_toBottomOf="@+id/text_square_rights" />
+
+    <Button
+        android:id="@+id/button_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/send_feedback"
+        app:layout_constraintBottom_toTopOf="@+id/button_donation"
+        app:layout_constraintEnd_toEndOf="@+id/button_blog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button_blog"
+        app:layout_constraintTop_toBottomOf="@+id/button_blog" />
+
+    <Button
+        android:id="@+id/button_donation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/donation"
+        app:layout_constraintBottom_toBottomOf="@+id/button_feedback"
+        app:layout_constraintEnd_toEndOf="@+id/button_feedback"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/button_feedback"
+        app:layout_constraintTop_toBottomOf="@+id/button_feedback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
