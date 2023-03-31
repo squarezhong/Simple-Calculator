@@ -103,6 +103,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.tvEquals.setOnClickListener {
             val text = binding.tvExpression.text.toString()
+
+            if (text.takeLast(2) == "/0") {
+                Toast.makeText(this, "0 can not be denominator!", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
             val expression = ExpressionBuilder(text).build()
 
             val result = expression.evaluate()

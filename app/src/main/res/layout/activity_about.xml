@@ -19,39 +19,39 @@
         app:layout_constraintVertical_bias="0.25" />
 
     <Button
-        android:id="@+id/button_blog"
+        android:id="@+id/buttonBlog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/visit_my_blog"
-        app:layout_constraintBottom_toTopOf="@+id/button_feedback"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFeedback"
         app:layout_constraintEnd_toEndOf="@+id/text_square_rights"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/text_square_rights"
         app:layout_constraintTop_toBottomOf="@+id/text_square_rights" />
 
     <Button
-        android:id="@+id/button_feedback"
+        android:id="@+id/buttonFeedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/send_feedback"
-        app:layout_constraintBottom_toTopOf="@+id/button_donation"
-        app:layout_constraintEnd_toEndOf="@+id/button_blog"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDonation"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBlog"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button_blog"
-        app:layout_constraintTop_toBottomOf="@+id/button_blog" />
+        app:layout_constraintStart_toStartOf="@+id/buttonBlog"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBlog" />
 
     <Button
-        android:id="@+id/button_donation"
+        android:id="@+id/buttonDonation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/donation"
-        app:layout_constraintBottom_toBottomOf="@+id/button_feedback"
-        app:layout_constraintEnd_toEndOf="@+id/button_feedback"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFeedback"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFeedback"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/button_feedback"
-        app:layout_constraintTop_toBottomOf="@+id/button_feedback" />
+        app:layout_constraintStart_toStartOf="@+id/buttonFeedback"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFeedback" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
